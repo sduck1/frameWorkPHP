@@ -16,7 +16,7 @@ class Order extends Model {
         $addressStrlen = strlen($post['address']);
         //$commentStrlen = strlen($post['comment']);
 
-        if ($firstStrlen < 3 or $firstStrlen > 20 ){
+        if ($firstStrlen < 3 or $firstStrlen > 22 ){
             $this ->error = 'Имя должно содержать от 3 до 20 символов';
             return false;
         } elseif ($lastStrlen < 3 or $lastStrlen > 20 ){
