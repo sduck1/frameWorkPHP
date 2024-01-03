@@ -17,7 +17,7 @@ class Order extends Model {
         //$commentStrlen = strlen($post['comment']);
 
         if ($firstStrlen < 3 or $firstStrlen > 22 ){
-            $this ->error = 'Имя должно содержать от 3 до 20 символов';
+            $this ->error = 'Имя должно содержать от 3 до 22 символов';
             return false;
         } elseif ($lastStrlen < 3 or $lastStrlen > 20 ){
             $this ->error = 'Фамилия должна содержать от 3 до 20 символов';
